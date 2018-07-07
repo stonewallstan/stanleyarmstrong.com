@@ -8,3 +8,8 @@ bundle.js
 
 # Dependency directories
 node_modules/
+
+# Assets this includes pictures or videos
+assets/
+
+*.jpg

@@ -23,3 +23,13 @@ footer {
   background-color: black;
   color: white;
 }
+
+:local(.me) {
+  border-radius: 50%;
+  height: 30vh;
+  width: 18vw;
+}
+
+:local(.hi) {
+  color : #72B2AD;
+}
