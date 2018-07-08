@@ -6,8 +6,16 @@ class NavBar extends Component{
   render() {
     return (
       <header>
-        <ul id="headerButtons">
-          <li className="navButton"><Link to="">Home</Link></li>
+        <ul className = {styles.headerButtons}>
+          <li className= {styles.navButton}>
+            <Link to="/">Home</Link>
+          </li>
+          <li className = {styles.navButton}>
+            <Link to = "/tech">Tech</Link>
+          </li>
+          <li className = {styles.navButton}>
+            <Link to ="/media">Media</Link>
+          </li>
         </ul>
       </header>
     )
