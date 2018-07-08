@@ -17,15 +17,27 @@ header {
 }
 
 footer {
+  position: absolute;
   display: block;
   width: 100%;
-  height: 50px;
   background-color: #005291;
   color: white;
+  bottom: 0;
+  height: 50px;
 }
 
 :local(.me) {
   border-radius: 50%;
   height: 30vh;
   width: 18vw;
+}
+
+:local(.mn) {
+   list-style-type: none;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 !important;
 }

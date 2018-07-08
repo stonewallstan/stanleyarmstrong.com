@@ -6,7 +6,7 @@ import NavBar from './NavComponents/NavBar';
 import Footer from './footerComponent/Footer';
 import MediaPage from './MediaPage';
 import TechPage from './TechPage';
-import MoreNavigation from './NavComponents/MoreNavigation'
+import MoreNavigation from './NavComponents/MoreNavigation';
 
 
 class App extends Component {
