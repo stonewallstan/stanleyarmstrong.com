@@ -1,7 +1,25 @@
 module.exports = {
   siteMetadata: {
     title: `Stanley Armstrong`,
-    description: ``,
+    description: `a portfolio personal site`,
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'about',
+        link: '/about'
+      },
+      {
+        name: 'work',
+        link: '/work'
+      },
+      {
+        name: 'projects',
+        link: '/projects'
+      }
+    ],
     author: `@stonewallstan`,
   },
   plugins: [

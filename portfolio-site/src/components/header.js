@@ -1,33 +1,40 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styles from "../styles/header.module.css"
+import "../styles/global.css"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `linear-gradient(180deg, #54A0B8, 68.23%, #ffefdb, 100%)`,
-      marginBottom: `1.45rem`,
-      textAlign: 'center'
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+const Header = ({ siteTitle, menuLinks }) => (
+   <header className = {styles.header}>
+     <div className={styles.headerText}>
+      <h1 className={styles.text}>
         <Link
+          className={styles.link}
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
         >
           {siteTitle}
         </Link>
       </h1>
+     </div>
+     <div className={styles.navbar}>
+      <nav>
+          <ul style={{
+            display: `flex`,
+            flexDirection: `row`,
+            justifyContent: `space-evenly`
+          }}>
+            {menuLinks.map(link => (
+              <li
+                key={link.name}
+                style={{listStyleType: `none`}}
+              >
+                <Link className={styles.link} to={link.link}>
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>   
+       </nav>
     </div>
   </header>
 )
